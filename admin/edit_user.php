@@ -45,7 +45,7 @@ if(!$res || !($user = $res->fetch_assoc())) {
 <body>
   <header><h1>Editar Usuario</h1></header>
   <div class="container">
-    <form method="post">
+    <form method="post" action='user_admin.php'>
       <label>Nombre:</label>
       <input name="nombre" type="text" value="<?php echo htmlspecialchars($user['nombre']); ?>" required>
       <label>Email:</label>
