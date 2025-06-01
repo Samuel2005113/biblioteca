@@ -25,7 +25,7 @@ if($_POST) {
            WHERE id=$id"
         );
     }
-    header('Location: users_admin.php');
+    header('Location: user_admin.php');
     exit;
 }
 
@@ -45,7 +45,7 @@ if(!$res || !($user = $res->fetch_assoc())) {
 <body>
   <header><h1>Editar Usuario</h1></header>
   <div class="container">
-    <form method="post" action='user_admin.php'>
+    <form method="post">
       <label>Nombre:</label>
       <input name="nombre" type="text" value="<?php echo htmlspecialchars($user['nombre']); ?>" required>
       <label>Email:</label>
