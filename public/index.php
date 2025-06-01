@@ -21,6 +21,7 @@ if(!isset($_SESSION['user'])) {
       <a href="../admin/books_admin.php"><button>Gestionar Libros</button></a>
     <?php endif; ?>
     <a href="books_public.php"><button>Ver Catálogo</button></a>
+    <a href="../reservations/mis_reservas.php"><button>Mis Reservas</button></a>
     <a href="logout.php"><button>Salir</button></a>
   </div>
 </body>

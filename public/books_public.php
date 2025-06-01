@@ -19,7 +19,6 @@ $res = $db->query("SELECT * FROM libros WHERE ejemplares_disponibles>0");
         <p>Autor: <?php echo htmlspecialchars($lib['autor']); ?></p>
         <p>Disponibles: <?php echo $lib['ejemplares_disponibles']; ?></p>
         <a href="../reservations/reserve.php?id=<?php echo $lib['id']; ?>"><button>Reservar</button></a>
-        <a href="../reservations/mis_reservas.php"><button>Mis Reservas</button></a>
       </div>
     <?php endwhile; ?>
     <a href="index.php"><button>Volver</button></a>
